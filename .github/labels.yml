@@ -1,0 +1,9 @@
+- name: labela
+  description: this is the first label
+  color: d73a4a
+- name: labelb
+  description: this is the second label
+  color: 0075ca
+- name: labelc
+  description: this is the third label
+  color: cfd3d7
