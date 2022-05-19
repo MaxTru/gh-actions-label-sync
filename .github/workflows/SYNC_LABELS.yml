@@ -17,3 +17,4 @@ jobs:
           repository: |
               MaxTru/IntegerCompressionUtils
           token: ${{ secrets.PAT }}
+          prune: false
