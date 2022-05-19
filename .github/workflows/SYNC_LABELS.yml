@@ -1,0 +1,19 @@
+name: SYNC_LABELS
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/labels.yml
+      - .github/workflows/SYNC_LABELS.yml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: .github/labels.yml
+          repository: |
+              MaxTru/IntegerCompressionUtils
+          token: ${{ secrets.PAT }}
